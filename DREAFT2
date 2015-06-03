@@ -1,0 +1,76 @@
+javascript:void((function(win){var e,k,w=win,d=w.document,m=d.getElementsByTagName('*'),i=m.length+0,p=['style','align','background','bgcolor','border','cellpadding','cellspacing','color','face','height','hspace','marginheight','marginwidth','noshade','nowrap','valign','vspace','width','vlink','alink','text','link','frame','frameborder','clear','scrolling'],j=p.length+0;while(i--!==0){e=m[i];k=j+0;while(k--!==0){e.removeAttribute(p[k]);};};e=w.open();j=e.document;j.title=w.location.pathname.split('/').pop();k=j.body;k.setAttribute('style','font:1.2em/normal monospace;white-space:pre-wrap;background:#F8F8F8;color:#000;');k.appendChild(d.createTextNode(d.documentElement.outerHTML));})(window));
+
+
+
+javascript:void((function(win){
+	var W,D,B, fragment, w=win, d=w.document, i='livesource', e=w[i], m=[
+	 ['spellcheck','false'],
+	 ['contenteditable','true'],
+	 ['style','font:1.2em/normal monospace;white-space:pre-wrap;background:#F8F8F8;color:#000;']
+	];
+
+	if(!e||e.closed){w[i]=e=w.open();};
+
+	W=e;
+	D=W.document;
+	D.title=w.location.pathname.split('/').pop();
+	B=D.body;
+	B.display='none';
+	i=m.length+0;
+	while(i--!==0){e=m[i];B.setAttribute(e[0],e[1]);};
+
+
+	m=W.fragments=W.fragments||[];
+	(fragment=m.push(D.createDocumentFragment())).appendChild(d.cloneNode(true));
+
+	B.appendChild(D.createTextNode(fragment.outerHTML));
+
+	B.ondblclick=function(){D.getSelection().selectAllChildren(B);};
+	B.display='block';
+})(window));
+
+
+
+
+console.dir(e);
+//================================================
+javascript:void((function(win){
+	var i,k,,d=w.document,
+
+
+	i=m.length+0;
+	while(i--!==0){d=m[i];e.setAttribute(d[0],d[1]);};
+
+
+	p=['style','align','background','bgcolor','border','cellpadding','cellspacing','color','face','height','hspace','marginheight','marginwidth','noshade','nowrap','valign','vspace','width','vlink','alink','text','link','frame','frameborder','clear','scrolling'],
+	j=p.length+0;
+	//m=d.getElementsByTagName('*'),
+		i=m.length+0,
+	while(i--!==0){e=m[i];k=j+0;while(k--!==0){e.removeAttribute(p[k]);};};
+
+
+	k.appendChild(d.createTextNode(d.documentElement.outerHTML));
+
+	e.ondblclick=function(){e.getSelection().selectAllChildren(k);};
+	e.focus();
+})(window));
+
+
+/*
+*/
+
+
+
+//removeInlineStyleAndPresentationalAttributes
+//View Generated Source of Webpage
+
+console.dir();
+/*
+d.body.innerHTML=('<textarea style="position:absolute;top:0;bottom:0;right:0;box-sizing:border-box;width:100%;padding:9px;resize:none;" />');
+
+.querySelector('textarea')
+
+data:text/plain,
+data:text/html,
+
+*/
